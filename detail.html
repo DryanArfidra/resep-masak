@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Resep - Resep Pintar</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="logo">Resep Pintar</h1>
+                <div class="header-actions">
+                    <a href="index.html" class="back-button"><i class="fas fa-arrow-left"></i> Kembali</a>
+                    <button id="theme-toggle"><i class="fas fa-moon"></i></button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="recipe-detail" id="recipe-detail">
+                <div class="loading" id="loading">
+                    <i class="fas fa-spinner fa-spin"></i>
+                    <p>Memuat detail resep...</p>
+                </div>
+                <div class="error-message" id="error-message" style="display: none;">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <p>Terjadi kesalahan saat memuat detail resep. Silakan coba lagi.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 Resep Pintar. Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+
+    <script src="src/modules/api.js"></script>
+    <script src="src/modules/ui.js"></script>
+    <script src="src/modules/storage.js"></script>
+    <script src="src/modules/utils.js"></script>
+    <script src="src/main.js"></script>
+</body>
+</html>

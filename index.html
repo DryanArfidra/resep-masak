@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Pintar - Temukan Resep Favorit Anda</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="logo">Resep Masakan</h1>
+                <div class="header-actions">
+                    <div class="search-container">
+                        <input type="text" id="search-input" placeholder="Cari resep...">
+                        <button id="search-button"><i class="fas fa-search"></i></button>
+                    </div>
+                    <button id="theme-toggle"><i class="fas fa-moon"></i></button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="categories">
+                <h2 class="section-title">Kategori Resep</h2>
+                <div class="category-buttons" id="category-buttons">
+                    <!-- Kategori akan dimuat di sini -->
+                </div>
+            </div>
+
+            <div class="recipes">
+                <h2 class="section-title">Resep Populer</h2>
+                <div class="recipe-grid" id="recipe-grid">
+                    <!-- Resep akan dimuat di sini -->
+                </div>
+                <div class="loading" id="loading">
+                    <i class="fas fa-spinner fa-spin"></i>
+                    <p>Memuat resep...</p>
+                </div>
+                <div class="error-message" id="error-message" style="display: none;">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <p>Terjadi kesalahan saat memuat resep. Silakan coba lagi.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 Resep Pintar. Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+
+    <script src="src/modules/api.js"></script>
+    <script src="src/modules/ui.js"></script>
+    <script src="src/modules/storage.js"></script>
+    <script src="src/modules/utils.js"></script>
+    <script src="src/main.js"></script>
+</body>
+</html>
